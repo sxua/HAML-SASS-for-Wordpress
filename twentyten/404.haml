@@ -1,0 +1,8 @@
+#container
+	#content{:role => "main"}
+		#post-0.post.error404.not-found
+			%h1.entry-title <?php _e( 'Not Found', 'twentyten' ); ?>
+			.entry-content
+				%p <?php _e( 'Apologies, but the page you requested could not be found. Perhaps searching will help.', 'twentyten' ); ?>
+				<?php get_search_form(); ?>
+%script{:type => "text/javascript"} document.getElementById('s') && document.getElementById('s').focus();
