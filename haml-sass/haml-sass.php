@@ -29,11 +29,11 @@ class Haml {
   }
   
   static function error_not_installed() {
-    echo '<div class="updated fade"><p>It seems, you have no Haml installed on your server. Install it with: <em>[sudo] gem install haml --pre</em></p></div>';
+    echo '<div class="updated fade"><p>It seems, you have no Haml installed on your server. Install it with: <em>[sudo] gem install haml</em></p></div>';
   }
   
   static function error_bad_version() {
-    echo '<div class="updated fade"><p>In order to include <em><?php ?></em> tags in your HAML files, you need to install 3.1 version of Haml. <em>gem isntall haml --pre</em></p></div>';
+    echo '<div class="updated fade"><p>In order to include <em><?php ?></em> tags in your HAML files, you need to install 3.1 version of Haml. <em>[sudo] gem install haml</em></p></div>';
   }
   
   private function fix_path($path) {
