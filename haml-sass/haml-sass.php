@@ -74,7 +74,7 @@ class Haml {
   }
   
   static function sass($file_name,$scss = false) {
-    $ext = ($scss) ? : '.scss' : '.sass';
+    $ext = ($scss) ? '.scss' : '.sass';
     if (strpos($file_name, '.css') || strpos($file_name, $ext)) $file_name = str_replace(array('.css', $ext), '', $file_name);
     if (strpos($filename, '/')) {
       $parts = explode('/', $file_name);
